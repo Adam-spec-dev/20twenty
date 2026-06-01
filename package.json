@@ -1,0 +1,21 @@
+{
+  "name": "20twenty-ai-university",
+  "private": true,
+  "packageManager": "pnpm@9.1.4",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "biome check .",
+    "format": "biome format . --write",
+    "type-check": "turbo run type-check",
+    "setup": "bash scripts/setup.sh"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.3",
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.5"
+  }
+}

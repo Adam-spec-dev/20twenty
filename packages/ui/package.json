@@ -1,0 +1,21 @@
+{
+  "name": "@20twenty/ui",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "biome check ."
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.3.0",
+    "lucide-react": "^0.378.0",
+    "framer-motion": "^11.2.10"
+  },
+  "devDependencies": {
+    "tailwindcss": "4.0.0-alpha.15",
+    "typescript": "^5.4.5"
+  }
+}
