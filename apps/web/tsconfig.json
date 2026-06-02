@@ -1,5 +1,5 @@
 {
-  "extends": "@20twenty/config/tsconfig.base",
+  "extends": "../../packages/config/tsconfig.base.json",
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
