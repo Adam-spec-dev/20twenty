@@ -21,3 +21,11 @@ coverage
 # IDE
 .vscode
 .idea
+
+# Build outputs
+out/
+apps/web/out/
+*.tsbuildinfo
+
+# Local data / Temporary files
+landigpages/

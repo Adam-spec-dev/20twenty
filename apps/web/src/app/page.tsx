@@ -1,16 +1,36 @@
-import { Button } from "@20twenty/ui";
+import fs from "fs";
+import path from "path";
+import DashboardPortal from "./DashboardPortal";
+
+interface StackItem {
+  n: string;
+  d: string;
+}
+
+interface Lead {
+  n: number;
+  name: string;
+  cat: string;
+  city: string;
+  likes: string;
+  sub: string;
+  phone: string;
+  fb: string;
+  ai: string;
+  price: string;
+  pain: string;
+  stack: StackItem[];
+  pitch: string;
+}
+
+function getLeads(): Lead[] {
+  const filePath = path.join(process.cwd(), "src/data/leads.json");
+  const fileContent = fs.readFileSync(filePath, "utf8");
+  return JSON.parse(fileContent);
+}
 
 export default function HomePage() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-4xl font-bold tracking-tight">20TWENTY: Ai University</h1>
-      <p className="mt-4 text-xl text-muted-foreground">
-        100X Elite Engineering Foundation
-      </p>
-      <div className="mt-8 flex gap-4">
-        <Button>Get Started</Button>
-        <Button variant="outline">Learn More</Button>
-      </div>
-    </main>
-  );
+  const leads = getLeads();
+
+  return <DashboardPortal leads={leads} />;
 }

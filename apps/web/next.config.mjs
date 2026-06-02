@@ -1,12 +1,9 @@
 /** @type {import('next').NextConfig} */
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
 const nextConfig = {
+  output: "export",
   transpilePackages: ["@20twenty/ui", "@20twenty/database"],
   images: {
+    unoptimized: true,
     formats: ["image/avif", "image/webp"],
   },
 };
