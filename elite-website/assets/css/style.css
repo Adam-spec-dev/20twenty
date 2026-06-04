@@ -13,6 +13,20 @@ html, body {
 
 /* ==== CSS Variables ==== */
 :root {
+  --color-primary: #7F2020;
+  --color-secondary: #869B7E;
+  --color-accent: #C9CAAC;
+  --color-bg: #F6F3EB;
+  --gradient-start: #7F2020;
+  --gradient-end: #869B7E;
+}
+
+/* Hero background using generated image if present */
+.hero {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)),
+    url('../img/hero_background.png') center/cover no-repeat;
+  color: #fff;
+}
   --primary-hue: 220;       /* deep blue */
   --primary-sat: 30%;
   --primary-light: 45%;
