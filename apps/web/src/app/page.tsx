@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Sparkles, Zap, Shield } from "lucide-react";
+import SmokeBackground from "@/components/SmokeBackground";
 
 export default function HomePage() {
   return (
@@ -22,9 +23,14 @@ export default function HomePage() {
         </nav>
       </header>
       
-      <main className="flex-1 pt-32 px-6 lg:px-14">
-        <section className="w-full py-20 md:py-32 flex flex-col items-center justify-center text-center">
-          <div className="space-y-6 max-w-4xl">
+      <main className="flex-1 pt-20 px-6 lg:px-14">
+        <section className="relative w-full py-28 md:py-40 flex flex-col items-center justify-center text-center overflow-hidden border-b border-border/40">
+          {/* Premium WebGL Smoke Background */}
+          <div className="absolute inset-0 z-0 opacity-25">
+            <SmokeBackground smokeColor="#7F2020" />
+          </div>
+
+          <div className="relative z-10 space-y-6 max-w-4xl px-4">
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter text-primary">
               Elevate Your Brand With <span className="text-secondary">AI-Driven</span> Excellence.
             </h1>
