@@ -11,9 +11,9 @@ export default function HomePage() {
           <Image
             src="/logo.png"
             alt="20Twenty"
-            width={120}
-            height={44}
-            className="h-11 w-auto object-contain"
+            width={160}
+            height={58}
+            className="h-14 w-auto object-contain"
             priority
           />
         </Link>
