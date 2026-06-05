@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
   transpilePackages: ["@20twenty/ui", "@20twenty/database"],
   images: {
     unoptimized: true,

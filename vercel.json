@@ -1,5 +1,4 @@
 {
   "rootDirectory": "apps/web",
-  "installCommand": "pnpm install",
-  "outputDirectory": "apps/web/out"
+  "installCommand": "pnpm install"
 }
