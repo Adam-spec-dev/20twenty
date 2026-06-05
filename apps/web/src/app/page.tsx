@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, Sparkles, Zap, Shield } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, Zap, Shield, Sparkles } from "lucide-react";
 import SmokeBackground from "@/components/SmokeBackground";
 
 export default function HomePage() {
@@ -7,8 +8,14 @@ export default function HomePage() {
     <div className="min-h-screen bg-background text-foreground flex flex-col">
       <header className="px-6 lg:px-14 h-20 flex items-center justify-between border-b border-border/40 backdrop-blur-md fixed top-0 w-full z-50">
         <Link className="flex items-center justify-center" href="/">
-          <Sparkles className="h-6 w-6 text-primary mr-2" />
-          <span className="font-bold text-xl tracking-tight text-primary">20TWENTY</span>
+          <Image
+            src="/logo.png"
+            alt="20Twenty"
+            width={120}
+            height={44}
+            className="h-11 w-auto object-contain"
+            priority
+          />
         </Link>
         <nav className="flex gap-6 sm:gap-10">
           <Link className="text-sm font-medium hover:text-primary transition-colors" href="#services">
@@ -83,9 +90,13 @@ export default function HomePage() {
       </main>
 
       <footer className="py-6 w-full border-t border-border/40 px-6 lg:px-14 flex flex-col sm:flex-row justify-between items-center bg-card">
-        <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} 20TWENTY Agency. All rights reserved.
-        </p>
+        <Image
+          src="/logo.png"
+          alt="20Twenty"
+          width={80}
+          height={30}
+          className="h-8 w-auto object-contain mb-4 sm:mb-0"
+        />
         <nav className="flex gap-4 sm:gap-6 mt-4 sm:mt-0">
           <Link className="text-sm hover:underline underline-offset-4" href="#">
             Terms of Service

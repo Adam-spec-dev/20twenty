@@ -4,6 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "20TWENTY: Ai University",
   description: "100X Elite Engineering Foundation",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
