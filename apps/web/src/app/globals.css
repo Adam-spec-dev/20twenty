@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
 
 @theme {
   --color-border: var(--border);
@@ -13,9 +13,6 @@
 
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
-
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
 
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
@@ -36,48 +33,36 @@
 
 @layer base {
   :root {
-    --background: 44 38% 94%; /* #F6F3EB */
-    --foreground: 0 60% 15%; 
-    --card: 0 0% 100%;
-    --card-foreground: 0 60% 15%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 60% 15%;
-    --primary: 0 60% 31%; /* #7F2020 */
-    --primary-foreground: 44 38% 94%;
-    --secondary: 103 14% 55%; /* #869B7E */
-    --secondary-foreground: 0 0% 100%;
-    --muted: 62 23% 73%; /* #C9CAAC */
-    --muted-foreground: 0 60% 31%;
-    --accent: 62 23% 73%; /* #C9CAAC */
-    --accent-foreground: 0 60% 15%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 20% 98%;
-    --border: 62 23% 73%;
-    --input: 62 23% 73%;
-    --ring: 0 60% 31%;
-    --radius: 0.75rem;
-  }
-
-  .dark {
+    /* Premium Dark Theme Default */
     --background: 224 71.4% 4.1%;
     --foreground: 210 20% 98%;
-    --card: 224 71.4% 4.1%;
+    
+    --card: 224 71.4% 6%;
     --card-foreground: 210 20% 98%;
+    
     --popover: 224 71.4% 4.1%;
     --popover-foreground: 210 20% 98%;
-    --primary: 210 20% 98%;
+    
+    --primary: 250 100% 70%; /* Neon Purple/Blue */
     --primary-foreground: 220.9 39.3% 11%;
+    
     --secondary: 215 27.9% 16.9%;
     --secondary-foreground: 210 20% 98%;
+    
     --muted: 215 27.9% 16.9%;
     --muted-foreground: 217.9 10.6% 64.9%;
-    --accent: 215 27.9% 16.9%;
+    
+    --accent: 250 100% 70%;
     --accent-foreground: 210 20% 98%;
+    
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 20% 98%;
+    
     --border: 215 27.9% 16.9%;
     --input: 215 27.9% 16.9%;
-    --ring: 216 12.2% 83.9%;
+    --ring: 250 100% 70%;
+    
+    --radius: 0.75rem;
   }
 }
 
@@ -87,6 +72,30 @@
   }
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased selection:bg-primary/30;
   }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(167, 139, 250, 0.5);
+}
+
+.glow-bg {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(139,92,246,0.15) 0%, rgba(0,0,0,0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
 }
