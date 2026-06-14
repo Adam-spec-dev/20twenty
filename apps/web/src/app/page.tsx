@@ -22,7 +22,7 @@ export default function HomePage() {
             Services
           </Link>
           <Link className="text-sm font-medium hover:text-primary transition-colors" href="#about">
-            About Us
+            À Propos
           </Link>
           <Link className="text-sm font-medium hover:text-primary transition-colors" href="#contact">
             Contact
@@ -39,30 +39,30 @@ export default function HomePage() {
 
           <div className="relative z-10 space-y-6 max-w-4xl px-4">
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter text-primary">
-              Elevate Your Brand With <span className="text-secondary">AI-Driven</span> Excellence.
+              Propulsez Votre Marque Avec l'Excellence de <span className="text-secondary">l'IA</span>.
             </h1>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              We build premium, high-converting digital experiences tailored for the modern web. Fast, scalable, and beautifully designed.
+              Nous construisons des expériences digitales premium et à haute conversion, conçues pour le web moderne. Rapides, évolutives et au design élégant.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
               <Link
                 href="#contact"
                 className="inline-flex h-12 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
               >
-                Get Started
+                Commencer
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
               <Link
                 href="#services"
                 className="inline-flex h-12 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground"
               >
-                Learn More
+                En Savoir Plus
               </Link>
               <Link
                 href="/manifesto"
                 className="inline-flex h-12 items-center justify-center rounded-md border border-primary text-primary bg-background px-8 text-sm font-bold shadow-sm transition-colors hover:bg-primary/10"
               >
-                Read the Manifesto
+                Lire le Manifeste
               </Link>
             </div>
           </div>
@@ -74,22 +74,22 @@ export default function HomePage() {
               <div className="p-3 rounded-full bg-primary/10">
                 <Zap className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold">Lightning Fast</h3>
-              <p className="text-muted-foreground">Optimized architectures that load instantly and keep your users engaged.</p>
+              <h3 className="text-xl font-bold">Ultra Rapide</h3>
+              <p className="text-muted-foreground">Des architectures optimisées qui se chargent instantanément et captivent vos utilisateurs.</p>
             </div>
             <div className="flex flex-col items-center text-center space-y-4 p-6 rounded-2xl bg-card border border-border/50 shadow-sm">
               <div className="p-3 rounded-full bg-primary/10">
                 <Sparkles className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold">Premium Design</h3>
-              <p className="text-muted-foreground">Custom-tailored aesthetics that make your brand stand out from the competition.</p>
+              <h3 className="text-xl font-bold">Design Premium</h3>
+              <p className="text-muted-foreground">Une esthétique sur mesure qui permet à votre marque de se démarquer de la concurrence.</p>
             </div>
             <div className="flex flex-col items-center text-center space-y-4 p-6 rounded-2xl bg-card border border-border/50 shadow-sm">
               <div className="p-3 rounded-full bg-primary/10">
                 <Shield className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold">Enterprise Ready</h3>
-              <p className="text-muted-foreground">Secure, scalable, and built on the robust technologies trusted by industry leaders.</p>
+              <h3 className="text-xl font-bold">Prêt pour l'Entreprise</h3>
+              <p className="text-muted-foreground">Sécurisé, évolutif et construit sur des technologies robustes approuvées par les leaders de l'industrie.</p>
             </div>
           </div>
         </section>
@@ -105,10 +105,10 @@ export default function HomePage() {
         />
         <nav className="flex gap-4 sm:gap-6 mt-4 sm:mt-0">
           <Link className="text-sm hover:underline underline-offset-4" href="#">
-            Terms of Service
+            Conditions d'Utilisation
           </Link>
           <Link className="text-sm hover:underline underline-offset-4" href="#">
-            Privacy
+            Confidentialité
           </Link>
         </nav>
       </footer>
